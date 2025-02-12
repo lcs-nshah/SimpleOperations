@@ -6,17 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		23060C4E2D5CE2BD00A68F2B /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23060C4B2D5CE2BD00A68F2B /* LandingView.swift */; };
+		23060C4F2D5CE2BD00A68F2B /* SimpleOperationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23060C4C2D5CE2BD00A68F2B /* SimpleOperationsApp.swift */; };
+		23060C502D5CE2BD00A68F2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23060C482D5CE2BD00A68F2B /* Preview Assets.xcassets */; };
+		23060C512D5CE2BD00A68F2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23060C4A2D5CE2BD00A68F2B /* Assets.xcassets */; };
+		23060C562D5CE4C400A68F2B /* AdditionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23060C552D5CE4C400A68F2B /* AdditionView.swift */; };
+		23060C582D5CE4F000A68F2B /* SubtractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23060C572D5CE4F000A68F2B /* SubtractionView.swift */; };
+		23060C5A2D5CE50800A68F2B /* MultiplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23060C592D5CE50700A68F2B /* MultiplicationView.swift */; };
+		23060C5C2D5CE52300A68F2B /* DivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23060C5B2D5CE52300A68F2B /* DivisionView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		23060C372D5CE2AD00A68F2B /* SimpleOperations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleOperations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23060C482D5CE2BD00A68F2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23060C4A2D5CE2BD00A68F2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23060C4B2D5CE2BD00A68F2B /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		23060C4C2D5CE2BD00A68F2B /* SimpleOperationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleOperationsApp.swift; sourceTree = "<group>"; };
+		23060C552D5CE4C400A68F2B /* AdditionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionView.swift; sourceTree = "<group>"; };
+		23060C572D5CE4F000A68F2B /* SubtractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionView.swift; sourceTree = "<group>"; };
+		23060C592D5CE50700A68F2B /* MultiplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationView.swift; sourceTree = "<group>"; };
+		23060C5B2D5CE52300A68F2B /* DivisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		23060C392D5CE2AD00A68F2B /* SimpleOperations */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SimpleOperations;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		23060C342D5CE2AD00A68F2B /* Frameworks */ = {
@@ -32,7 +43,7 @@
 		23060C2E2D5CE2AD00A68F2B = {
 			isa = PBXGroup;
 			children = (
-				23060C392D5CE2AD00A68F2B /* SimpleOperations */,
+				23060C4D2D5CE2BD00A68F2B /* SimpleOperations */,
 				23060C382D5CE2AD00A68F2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +54,37 @@
 				23060C372D5CE2AD00A68F2B /* SimpleOperations.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		23060C492D5CE2BD00A68F2B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				23060C482D5CE2BD00A68F2B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		23060C4D2D5CE2BD00A68F2B /* SimpleOperations */ = {
+			isa = PBXGroup;
+			children = (
+				23060C4C2D5CE2BD00A68F2B /* SimpleOperationsApp.swift */,
+				23060C522D5CE2C200A68F2B /* Views */,
+				23060C492D5CE2BD00A68F2B /* Preview Content */,
+				23060C4A2D5CE2BD00A68F2B /* Assets.xcassets */,
+			);
+			path = SimpleOperations;
+			sourceTree = "<group>";
+		};
+		23060C522D5CE2C200A68F2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23060C4B2D5CE2BD00A68F2B /* LandingView.swift */,
+				23060C552D5CE4C400A68F2B /* AdditionView.swift */,
+				23060C572D5CE4F000A68F2B /* SubtractionView.swift */,
+				23060C592D5CE50700A68F2B /* MultiplicationView.swift */,
+				23060C5B2D5CE52300A68F2B /* DivisionView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +101,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				23060C392D5CE2AD00A68F2B /* SimpleOperations */,
 			);
 			name = SimpleOperations;
 			packageProductDependencies = (
@@ -109,6 +148,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23060C502D5CE2BD00A68F2B /* Preview Assets.xcassets in Resources */,
+				23060C512D5CE2BD00A68F2B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23060C4E2D5CE2BD00A68F2B /* LandingView.swift in Sources */,
+				23060C5C2D5CE52300A68F2B /* DivisionView.swift in Sources */,
+				23060C5A2D5CE50800A68F2B /* MultiplicationView.swift in Sources */,
+				23060C582D5CE4F000A68F2B /* SubtractionView.swift in Sources */,
+				23060C4F2D5CE2BD00A68F2B /* SimpleOperationsApp.swift in Sources */,
+				23060C562D5CE4C400A68F2B /* AdditionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

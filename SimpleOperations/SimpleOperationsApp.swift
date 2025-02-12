@@ -11,7 +11,7 @@ import SwiftUI
 struct SimpleOperationsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LandingView()
         }
     }
 }
