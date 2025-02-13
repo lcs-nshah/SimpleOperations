@@ -10,12 +10,12 @@ import SwiftUI
 struct SubtractionView: View {
     
     // MARK: Stored Properties
-    @State var firstNumber: Int = 1
-    @State var secondNumber: Int = 1
+    @State var minuend: Int = 1
+    @State var subtrahend: Int = 1
     
     // MARK: Computed Properties
     var difference: Int {
-        return firstNumber - secondNumber
+        return minuend - subtrahend
     }
     
     var body: some View {
@@ -25,16 +25,39 @@ struct SubtractionView: View {
             //First number
             HStack {
                 Spacer()
-                Text("\(firstNumber)")
+                Text("\(minuend)")
+                    .font(.system(size: 75))
             }
-            .font(.system(size: 75))
             
-            Stepper(value: $firstNumber, label: {
-                Text("First Number")
+            Stepper(value: $minuend, label: {
+                Text("Minuend")
                     .font(.system(size: 22.0, weight: .light, design: .default))
             })
-
+            
+            //Second number
+            HStack {
+                Text("\(Image(systemName: "minus"))")
+                    .font(.system(size: 50))
+                Spacer()
+                Text("\(subtrahend)")
+                    .font(.system(size: 75))
+            }
+            
+            Stepper(value: $subtrahend, label: {
+                Text("Subtrahend")
+                    .font(.system(size: 22.0, weight: .light, design: .default))
+            })
+            
+            // Answer
+            Rectangle()
+                .frame(height: 5)
+            
+            Text("\(difference)")
+                .font(.system(size: 75))
+            
+            Spacer()
         }
+        .padding(25)
     }
 }
 
