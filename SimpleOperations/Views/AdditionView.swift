@@ -10,46 +10,50 @@ import SwiftUI
 struct AdditionView: View {
     
     // MARK: Stored Properties
-    @State var firstNumber: Int = 1
-    @State var secondNumber: Int = 1
+    @State var firstAddend: Int = 1
+    @State var secondAddend: Int = 1
     
     // MARK: Computed Properties
     var sum: Int {
-        return firstNumber + secondNumber
+        return firstAddend + secondAddend
     }
     
     var body: some View {
         VStack (alignment: .trailing) {
             Spacer()
             
+            // First number
             HStack {
                 Spacer()
-                Text("\(firstNumber)")
+                Text("\(firstAddend)")
                     .font(.system(size: 75))
             }
             
-            Stepper(value: $firstNumber, label: {
-                Text("First Number")
+            Stepper(value: $firstAddend, label: {
+                Text("First Addend")
+                    .font(.system(size: 22.0, weight: .light, design: .default))
             })
             
+            // Second number
             HStack {
                 Text("\(Image(systemName: "plus"))")
                     .font(.system(size: 50))
                 Spacer()
-                Text("\(secondNumber)")
+                Text("\(secondAddend)")
                     .font(.system(size: 75))
             }
             
-            Stepper(value: $secondNumber, label: {
-                Text("Second Number")
+            Stepper(value: $secondAddend, label: {
+                Text("Second Addend")
+                    .font(.system(size: 22.0, weight: .light, design: .default))
             })
             
+            // Answer
             Rectangle()
                 .frame(height: 5)
             
             Text("\(sum)")
                 .font(.system(size: 75))
-            
             
             Spacer()
         }
