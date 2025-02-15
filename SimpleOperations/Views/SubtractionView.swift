@@ -22,7 +22,7 @@ struct SubtractionView: View {
         VStack(alignment: .trailing) {
             Spacer()
             
-            //First number
+            // First number
             HStack {
                 Spacer()
                 Text("\(minuend)")
@@ -34,7 +34,7 @@ struct SubtractionView: View {
                     .font(.system(size: 22.0, weight: .light, design: .default))
             })
             
-            //Second number
+            // Second number
             HStack {
                 Text("\(Image(systemName: "minus"))")
                     .font(.system(size: 50))

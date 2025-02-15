@@ -14,15 +14,21 @@ struct DivisionView: View {
     @State var divisor: Int = 1
     
     // MARK: Computed Properties
-    var quotient: Int {
-        return dividend / divisor
+    var quotient: Int? {
+        
+        // Check for division by zero
+        if divisor == 0 {
+            return nil
+        } else {
+            return dividend / divisor
+        }
     }
     
     var body: some View {
         VStack(alignment: .trailing) {
             Spacer()
             
-            //First number
+            // First number
             HStack {
                 Spacer()
                 Text("\(dividend)")
@@ -34,7 +40,7 @@ struct DivisionView: View {
                     .font(.system(size: 22.0, weight: .light, design: .default))
             })
             
-            //Second number
+            // Second number
             HStack {
                 Text("\(Image(systemName: "divide"))")
                     .font(.system(size: 50))
@@ -48,12 +54,18 @@ struct DivisionView: View {
                     .font(.system(size: 22.0, weight: .light, design: .default))
             })
             
-            // Answer
             Rectangle()
                 .frame(height: 5)
             
-            Text("\(quotient)")
-                .font(.system(size: 75))
+            // Unwrap the optional to show answer
+            // or show appropriate error message
+            if let unwrappedQuotient = quotient {
+                Text("\(unwrappedQuotient)")
+                    .font(.system(size: 75))
+            } else {
+                Text("Cannot Divide by Zero")
+                    .font(.system(size: 40))
+            }
             
             Spacer()
         }
